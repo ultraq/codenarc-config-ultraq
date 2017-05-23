@@ -13,9 +13,13 @@ Currently adding on a project-by-project basis with the following code in a
 project's `build.gradle` file:
 
 ```groovy
+plugins {
+  id 'codenarc'
+}
+
 codenarc {
-	def sharedConfig = 'https://raw.githubusercontent.com/ultraq/codenarc-config-ultraq/master/codenarc.groovy'.toURL().text
-	config = resources.text.fromString(sharedConfig)
+  def sharedConfig = 'https://raw.githubusercontent.com/ultraq/codenarc-config-ultraq/master/codenarc.groovy'.toURL().text
+  config = resources.text.fromString(sharedConfig)
 }
 ```
 
