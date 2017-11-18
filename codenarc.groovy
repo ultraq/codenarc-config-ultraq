@@ -287,7 +287,6 @@ ruleset {
 	// rulesets/security.xml
 	FileCreateTempFile
 	InsecureRandom
-	JavaIoPackageAccess
 	NonFinalPublicField
 	NonFinalSubclassOfSensitiveInterface
 	ObjectFinalize
