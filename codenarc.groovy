@@ -146,7 +146,10 @@ ruleset {
 	// rulesets/formatting.xml
 	BracesForClass
 	BracesForForLoop
-	BracesForIfElse
+	BracesForIfElse {
+		validateElse = true
+		elseOnSameLineAsClosingBrace = false
+	}
 	BracesForMethod
 	BracesForTryCatchFinally
 	ClassJavadoc
