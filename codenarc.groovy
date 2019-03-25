@@ -227,7 +227,9 @@ ruleset {
 	DuplicateImport
 	ImportFromSamePackage
 	ImportFromSunPackages
-	NoWildcardImports
+	NoWildcardImports {
+		ignoreStaticImports = true
+	}
 	UnnecessaryGroovyImport
 	UnusedImport
 
