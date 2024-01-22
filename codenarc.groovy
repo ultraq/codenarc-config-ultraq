@@ -1,6 +1,6 @@
 /**
  * CodeNarc rules to apply to the project.
- * 
+ *
  * @author Emanuel Rabina
  */
 ruleset {
@@ -301,7 +301,9 @@ ruleset {
 	MethodCount
 	MethodSize
 	NestedBlockDepth
-	ParameterCount
+	ParameterCount {
+		maxParameters = 8
+	}
 
 	// rulesets/unnecessary.xml
 	AddEmptyString
